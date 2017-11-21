@@ -53,7 +53,7 @@ int main(int argc, const char * argv[]) {
     }
     cin >> n >> m;
     
-    if (n >= row || m >= row) {
+    if (n >= row || n < 0 || m >= row || m < 0) {
         cout << "error" << endl;
         return 0;
     }
