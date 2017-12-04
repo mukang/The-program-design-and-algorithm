@@ -52,10 +52,9 @@ bool match(char str[], int index) {
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-//    char str[100][100] = {'\0'};
     char str[110] = {'\0'};
     
-    while (cin >> str) {
+    while (cin.getline(str, 101)) {
         cout << str << endl;
         for (int i=0; i<strlen(str); i++) {
             if (str[i] != '(' && str[i] != ')') {
@@ -65,7 +64,7 @@ int main(int argc, const char * argv[]) {
         
         int index = 0;
         while (str[index] != '\0') {
-            while (str[index] != '(') {
+            while (str[index] != '(' && str[index] != '\0') {
                 index++;
             }
             bool isMatch = match(str, index);

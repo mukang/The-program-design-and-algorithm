@@ -232,8 +232,9 @@
 		7AADE03B1FD535F5001C204B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9F743944H3;
+				DEVELOPMENT_TEAM = 452XNHBVYZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,8 +242,9 @@
 		7AADE03C1FD535F5001C204B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9F743944H3;
+				DEVELOPMENT_TEAM = 452XNHBVYZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
