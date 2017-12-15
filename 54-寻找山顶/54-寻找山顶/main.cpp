@@ -25,13 +25,13 @@
 #include <iostream>
 using namespace std;
 
-void findMaxPosition(int array[20][20], int m, int n) {
+void findMaxPosition(const int (*array)[20], int m, int n) {
     int mark[20][20] = {0};
     int top = 0, left = 0, bottom = 0, right = 0;
     int value = 0;
     for (int i=0; i<m; i++) {
         for (int j=0; j<n; j++) {
-            value = mark[i][j];
+            value = array[i][j];
             if (value == 1) {
                 continue;
             }

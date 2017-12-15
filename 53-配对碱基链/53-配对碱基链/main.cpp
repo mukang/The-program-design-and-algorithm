@@ -25,10 +25,10 @@
 #include <iostream>
 using namespace std;
 
-void matchChain(char (*chain)[255], int n) {
+void matchChain(char (*chain)[256], int n) {
     for (int i=0; i<n; i++) {
         int index = 0;
-        char result[255] = {'\0'};
+        char result[256] = {'\0'};
         while (chain[i][index] != '\0') {
             switch (chain[i][index]) {
                 case 'A':
@@ -56,7 +56,7 @@ void matchChain(char (*chain)[255], int n) {
 int main(int argc, const char * argv[]) {
     // insert code here...
     int n = 0;
-    char chain[100][255] = {'\0'};
+    char chain[1000][256] = {'\0'};
     
     cin >> n;
     cin.get();

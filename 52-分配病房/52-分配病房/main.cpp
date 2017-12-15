@@ -74,7 +74,7 @@ int main(int argc, const char * argv[]) {
             cout << setfill('0') << setw(3) << num[i] << ' ' << setprecision(1) << value[i] << endl;
         }
     } else {
-        cout << "None" << endl;
+        cout << "None." << endl;
     }
     
     return 0;
